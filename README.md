@@ -1,2 +1,2 @@
 # Hygieia
-A Medical Dashboard built with angular and springboot 
+A Medical Dashboard 
