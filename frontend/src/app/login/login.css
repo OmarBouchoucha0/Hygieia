@@ -1,0 +1,26 @@
+::ng-deep p-floatlabel input:focus~label,
+::ng-deep p-floatlabel .p-inputwrapper-focus~label {
+  color: white !important;
+}
+
+
+
+::ng-deep .p-password {
+  width: 100%;
+}
+
+::ng-deep .p-password .p-password-input {
+  width: 100%;
+}
+
+::ng-deep .p-password .p-password-mask-icon {
+  color: #0a0a0a;
+}
+
+::ng-deep .p-password .p-password-unmask-icon {
+  color: #0a0a0a;
+}
+
+::ng-deep .p-password .p-password-input:not(:placeholder-shown) {
+  border-color: #0a0a0a !important;
+}
