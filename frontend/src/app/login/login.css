@@ -1,8 +1,3 @@
-:host {
-  display: block;
-  min-height: 100vh;
-}
-
 ::ng-deep p-floatlabel input:focus~label,
 ::ng-deep p-floatlabel .p-inputwrapper-focus~label {
   color: white !important;

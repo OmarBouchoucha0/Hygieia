@@ -56,13 +56,14 @@
         styleClass="!w-full !rounded-lg !bg-[#0a0a0a] !border-2 !border-[#0a0a0a] !text-white !text-sm !font-semibold !py-[13px] !shadow-none !transition-all !duration-300 hover:!opacity-80 !mt-1"
       />
 
-      <p class="text-center text-xs font-light text-black/40">
-        Don't have an account?
-        <span class="text-[#0a0a0a] font-medium border-b border-[#0a0a0a] cursor-pointer hover:opacity-70 transition-opacity">
-          Register
-        </span>
-      </p>
-
-    </form>
+<p class="text-center text-xs font-light text-black/40">
+  Don't have an account?
+  <span
+    class="text-[#0a0a0a] font-medium border-b border-[#0a0a0a] cursor-pointer hover:opacity-70 transition-opacity"
+    (click)="router.navigate(['/signup'])">
+    Register
+  </span>
+</p>
+</form>
   </div>
 </div>
