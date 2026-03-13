@@ -4,11 +4,12 @@ import { PasswordModule } from 'primeng/password';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild, NgZone, OnInit, OnDestroy } from '@angular/core';
+import { Component, ElementRef, ViewChild, NgZone } from '@angular/core';
+import { TiltDirective } from '../shared/directives/tilt';
 
 @Component({
   selector: 'app-login',
-  imports: [ButtonModule, InputTextModule, PasswordModule, FormsModule, CommonModule, FloatLabelModule],
+  imports: [ButtonModule, InputTextModule, PasswordModule, FormsModule, CommonModule, FloatLabelModule, TiltDirective],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
