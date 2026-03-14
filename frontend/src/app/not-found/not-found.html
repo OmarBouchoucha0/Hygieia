@@ -1,0 +1,17 @@
+<div class="min-h-screen min-w-screen flex items-center justify-center backdrop-blur-md bg-[#f5f5f5]">
+  <div appTilt class="w-[400px] bg-white rounded-[4px] border-2 border-[#0a0a0a] px-10 py-12 will-change-transform">
+    <h2 class="text-[36px] font-bold tracking-tight leading-tight text-[#0a0a0a] mb-2">
+      PAGE NOT FOUND
+    </h2>
+    <p class="text-sm font-light text-black/40 mb-8">Sign in to your account to continue</p>
+
+    <p class="text-center text-xs font-light text-black/40">
+      Are you lost?
+      <span
+        class="text-[#0a0a0a] font-medium border-b border-[#0a0a0a] cursor-pointer hover:opacity-70 transition-opacity"
+        (click)="router.navigate(['/'])">
+        Home
+      </span>
+    </p>
+  </div>
+</div>
