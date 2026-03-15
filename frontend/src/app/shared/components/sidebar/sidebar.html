@@ -1,0 +1,71 @@
+<p-drawer #drawerRef [(visible)]="visible" [modal]="true" (onHide)="onHide()">
+  <ng-template #headless>
+    <div class="flex flex-col h-full bg-white">
+      <!-- Header -->
+      <div class="flex items-center justify-between px-5 py-5 border-b border-black/10">
+        <span class="text-sm font-bold tracking-tight" style="font-family: 'Sora', sans-serif">
+          Med<span class="font-light opacity-40">OS</span>
+        </span>
+        <p-button
+          icon="pi pi-times"
+          [text]="true"
+          [plain]="true"
+          styleClass="!text-[#0a0a0a] !w-7 !h-7"
+          (onClick)="close()"
+        />
+      </div>
+      <!-- Nav -->
+      <div class="flex-1 overflow-y-auto px-3 py-4 flex flex-col gap-1">
+        <p class="text-[10px] font-medium tracking-widest uppercase text-black/35 px-3 mb-1">
+          Menu
+        </p>
+        <a class="nav-item" routerLink="overview" routerLinkActive="active" (click)="close()">
+          <i class="pi pi-th-large text-sm"></i>
+          Overview
+        </a>
+        <a class="nav-item" routerLink="appointments" routerLinkActive="active" (click)="close()">
+          <i class="pi pi-calendar text-sm"></i>
+          Appointments
+          <span class="nav-badge">3</span>
+        </a>
+        <a class="nav-item" routerLink="vitals" routerLinkActive="active" (click)="close()">
+          <i class="pi pi-heart text-sm"></i>
+          Vitals
+        </a>
+        <a class="nav-item" routerLink="records" routerLinkActive="active" (click)="close()">
+          <i class="pi pi-file text-sm"></i>
+          Records
+        </a>
+        <a class="nav-item" routerLink="prescriptions" routerLinkActive="active" (click)="close()">
+          <i class="pi pi-inbox text-sm"></i>
+          Prescriptions
+          <span class="nav-badge">2</span>
+        </a>
+        <p class="text-[10px] font-medium tracking-widest uppercase text-black/35 px-3 mt-4 mb-1">
+          Tools
+        </p>
+        <a class="nav-item" routerLink="ai-chat" routerLinkActive="active" (click)="close()">
+          <i class="pi pi-comment text-sm"></i>
+          AI Assistant
+        </a>
+      </div>
+      <!-- Footer -->
+      <div class="border-t border-black/10 px-3 py-4">
+        <div
+          class="flex items-center gap-3 px-3 py-2 rounded-xl cursor-pointer hover:bg-[#f5f5f5] transition-colors"
+        >
+          <div
+            class="w-8 h-8 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center text-xs font-semibold shrink-0"
+            style="font-family: 'Sora', sans-serif"
+          >
+            AB
+          </div>
+          <div>
+            <p class="text-xs font-medium">Amira Bensalem</p>
+            <p class="text-[10px] font-light text-black/40">Patient</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-drawer>

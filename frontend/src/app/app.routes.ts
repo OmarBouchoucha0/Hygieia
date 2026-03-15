@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { Login } from './login/login';
-import { Signup } from './signup/signup';
+import { Login } from './auth/login/login';
+import { Signup } from './auth/signup/signup';
 import { NotFound } from './not-found/not-found';
 
 export const routes: Routes = [
@@ -9,7 +9,7 @@ export const routes: Routes = [
   { path: 'signup', component: Signup },
   {
     path: 'patient',
-    loadChildren: () => import('./patient/patient.routes').then(r => r.PATIENT_ROUTES)
+    loadChildren: () => import('./patient/patient.routes').then((r) => r.PATIENT_ROUTES),
   },
   { path: '**', component: NotFound },
 ];

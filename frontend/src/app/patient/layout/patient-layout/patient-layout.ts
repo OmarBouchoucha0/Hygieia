@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { Toolbar } from '../../../toolbar/toolbar';
+import { Toolbar } from '../../../shared/components/toolbar/toolbar';
 import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { Sidebar } from '../../../../sidebar/sidebar';
+import { Sidebar } from '../../../shared/components/sidebar/sidebar';
 
 @Component({
   selector: 'app-patient-layout',

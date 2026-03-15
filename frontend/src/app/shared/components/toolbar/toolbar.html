@@ -1,0 +1,37 @@
+<p-toolbar styleClass="!bg-white !rounded-none !border-0 !border-b !border-black/10 !px-6 !py-3">
+
+  <ng-template #start>
+    <div class="flex items-center gap-3">
+      <p-button
+        icon="pi pi-bars"
+        [text]="true"
+        [plain]="true"
+        styleClass="!text-[#0a0a0a]"
+        (onClick)="menuClick.emit()"
+      />
+      <span class="text-sm font-bold tracking-tight" style="font-family:'Sora',sans-serif;">
+        Med<span class="font-light opacity-40">OS</span>
+      </span>
+    </div>
+  </ng-template>
+
+  <ng-template #end>
+    <div class="flex items-center gap-2">
+      <p-button
+        icon="pi pi-bell"
+        [text]="true"
+        [plain]="true"
+        styleClass="!text-[#0a0a0a]"
+        badge="3"
+        badgeClass="!bg-[#0a0a0a] !text-white !text-[10px]"
+      />
+      <p-avatar
+        label="AB"
+        styleClass="!bg-[#0a0a0a] !text-white !text-xs !font-semibold cursor-pointer"
+        shape="circle"
+        size="normal"
+      />
+    </div>
+  </ng-template>
+
+</p-toolbar>
