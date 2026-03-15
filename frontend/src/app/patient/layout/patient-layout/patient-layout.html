@@ -1,9 +1,11 @@
-<app-toolbar (menuClick)="drawer.visible = true" />
+<div class="flex flex-col h-screen">
+  <app-toolbar (menuClick)="drawer.visible = true" />
 
-<p-drawer #drawer position="left">
-  <!-- patient-specific nav links -->
-</p-drawer>
+  <p-drawer #drawer position="left">
+    <!-- patient-specific nav links -->
+  </p-drawer>
 
-<main class="min-h-screen bg-[#f5f5f5] p-6">
-  <router-outlet />
-</main>
+  <main class="min-h-screen bg-[#f5f5f5] p-6">
+    <router-outlet />
+  </main>
+</div>
