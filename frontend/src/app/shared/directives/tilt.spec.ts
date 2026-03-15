@@ -1,8 +1,11 @@
-import { Tilt } from './tilt';
+import { TiltDirective } from './tilt';
+import { ElementRef, NgZone } from '@angular/core';
 
-describe('Tilt', () => {
+describe('TiltDirective', () => {
   it('should create an instance', () => {
-    const directive = new Tilt();
+    const mockElementRef = { nativeElement: {} } as ElementRef;
+    const mockNgZone = { runOutsideAngular: (fn: () => void) => fn() } as NgZone;
+    const directive = new TiltDirective(mockElementRef, mockNgZone);
     expect(directive).toBeTruthy();
   });
 });
