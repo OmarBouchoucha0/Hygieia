@@ -1,35 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Lexend:wght@300;400;500&display=swap');
 
 @import 'tailwindcss';
+@import 'primeicons/primeicons.css';
 
-:root {
-  --font-heading: 'Sora', sans-serif;
-  --font-body: 'Lexend', sans-serif;
+.pi {
+  color: #0a0a0a;
+}
+
+@layer primeng {
+  ::ng-deep p-floatlabel input:focus ~ label,
+  ::ng-deep p-floatlabel .p-inputwrapper-focus ~ label {
+    color: white !important;
+  }
+
+  ::ng-deep .p-password {
+    width: 100%;
+  }
+
+  ::ng-deep .p-password .p-password-input {
+    width: 100%;
+  }
+
+  ::ng-deep .p-password .p-password-mask-icon {
+    color: #0a0a0a;
+  }
+
+  ::ng-deep .p-password .p-password-unmask-icon {
+    color: #0a0a0a;
+  }
+
+  ::ng-deep .p-password .p-password-input:not(:placeholder-shown) {
+    border-color: #0a0a0a !important;
+  }
 }
 
 html,
 body {
   height: 100%;
-  width: 100%;
   margin: 0;
+  overflow: hidden;
+  font-family: 'Lexend', sans-serif;
 }
 
-body {
-  margin: 0;
-  font-family: var(--font-body);
-  background-color: #fff;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-  margin: 0;
+app-root {
+  display: block;
+  height: 100%;
 }

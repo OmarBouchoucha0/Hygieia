@@ -1,11 +1,7 @@
-<div class="flex flex-col h-screen">
-  <app-toolbar (menuClick)="drawer.visible = true" />
-
-  <p-drawer #drawer position="left">
-    <!-- patient-specific nav links -->
-  </p-drawer>
-
-  <main class="min-h-screen bg-[#f5f5f5] p-6">
+<div class="flex flex-col h-screen min-w-screen">
+  <app-toolbar (menuClick)="sidebarVisible = true" />
+  <app-sidebar [(visible)]="sidebarVisible" />
+  <main class="flex-1 overflow-y-auto bg-[#f5f5f5]">
     <router-outlet />
   </main>
 </div>
